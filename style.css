@@ -1,0 +1,120 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.footer
+{background-color:#333333;
+padding: 90px 0;
+width: 100%;
+overflow: hidden;
+
+}
+.container{
+ 
+    margin: auto;
+    max-width: 85%;
+}
+.row
+{
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
+    width: 100%;
+}
+ul{
+    list-style: none;
+}
+.col{
+    width: 25%;
+    padding: 0px 15px;
+}
+.col h4{
+    font-size:22px;
+    color: white;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    position: relative;
+    margin: 5px;
+    word-spacing: 5px;
+
+}
+ .col h4::before{
+   
+    content: '';
+    position: absolute;
+    left: -4px;
+    bottom: -3px;
+    background-color: red;
+    height: 3px;
+    width: 111px;
+    opacity: 0;
+   
+}  
+.col h4:hover::before{
+opacity: 1;
+
+}
+/* .col h4::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50%;
+    height:2px;
+    background-color:red;
+    opacity: 0;
+    transition: opacity 300ms, transform 300ms;
+  }
+  
+  .col h4:hover::after,
+  .col h4 :focus::after {
+    opacity: 1;
+    transform: translate3d(0, 0.2em, 0);
+  } */
+   /* .col ul li:not(:last-child){
+      margin-bottom: 10px;
+  } */
+  .col ul li a{
+      font-size: 10px;
+      color: white;
+      text-transform: capitalize;
+      text-decoration: none;
+      font-size: 20px;
+      display: block;
+      padding-top:5px;
+      /* transition: all 0.3s ease; */
+  }
+  .col ul li a:hover{
+      color: white;
+      padding-left: 5px;
+      transition:all 0.5s ease;
+  }
+  /* .social-links i{
+
+    color: white;
+  } */
+ .social-links a{
+      display: inline-block;
+      height: 45px;
+      width: 47px;
+     
+      background-color: rgba(224, 220, 220, 0.2);
+      margin: 0 10px 10px 0;
+      text-align: center;
+      /* line-height: 40px; */
+      border-radius: 50%; 
+      color: white;
+      transition:all 0.5s ease;
+     padding-top: 5px;
+  }
+  .social-links a:hover{
+      color: black;
+      background-color: white;
+     
+  }
+ 
+  @media only screen and (max-width:766px){
+
+
+  }
